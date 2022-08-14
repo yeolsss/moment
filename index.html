@@ -14,7 +14,7 @@
     <section class="main_section">
       <span id="clock-span" class="clock-span"></span>
 
-      <form id="login-form" class="login-form">
+      <!-- <form id="login-form" class="login-form">
         <input
           type="text"
           required
@@ -23,15 +23,17 @@
           placeholder="이름을 입력해 주세요."
         />
       </form>
-      <span class="login-form__title active"> </span>
+      <span class="login-form__title active"> </span> -->
 
-      <form id="todo-form">
-        <input type="text" required placeholder="오늘 할 일을 적어주세요." />
-      </form>
-      <ul id="todo-list" lass="todo-list"></ul>
+      <div class="todo-section">
+        <form id="todo-form">
+          <input type="text" required placeholder="오늘 할 일을 적어주세요." />
+        </form>
+        <ul id="todo-list" lass="todo-list"></ul>
+      </div>
     </section>
   </body>
-  <script src="js/login.js"></script>
-  <script src="js/clock.js"></script>
-  <script src="js/todo.js"></script>
+  <!-- <script src="js/login.js" defer></script> -->
+  <script src="js/clock.js" defer></script>
+  <script src="js/todo.js" defer></script>
 </html>

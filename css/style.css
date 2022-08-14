@@ -1,13 +1,94 @@
 @import 'reset.css';
+@font-face {
+  src: url('/fonts/Neodgm.woff');
+  font-family: 'Neodgm';
+}
 
 :root {
+  --font-color: rgb(229, 228, 228);
 }
 
 * {
-  font-family: monaco, '나눔고딕', '나눔고딕OTF', '나눔손글씨 다행체', Consolas,
-    'Courier New', monospace;
+  color: var(--font-color);
 }
 
 .active {
   display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/img/3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 32px;
+  font-family: 'Neodgm';
+}
+.main_section {
+  height: 100%;
+  width: 100%;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+span,
+button {
+  text-shadow: 1px 1px 1px gray;
+  background-color: transparent;
+  border: 0px;
+  font-family: 'Neodgm';
+  font-size: 2em;
+}
+button:hover {
+  cursor: pointer;
+}
+form {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+}
+input {
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom: 1px solid var(--font-color);
+  background-color: transparent;
+  width: 30%;
+  font-family: 'Neodgm';
+  font-size: 1.4rem;
+}
+input::placeholder {
+  text-shadow: 1px 1px 1px gray;
+  color: var(--font-color);
+  font-size: 1.4rem;
+}
+.todo-section ul {
+  width: 30%;
+}
+.clock-span {
+  font-size: 6em;
+}
+.todo-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+.todo-section span,
+button {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
 }

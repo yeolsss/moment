@@ -23,7 +23,7 @@ function paintToDo(newTodo) {
   li.id = newTodo.id;
   li.appendChild(delBtn);
   li.appendChild(span);
-  delBtn.innerText = '❌';
+  delBtn.innerText = 'x';
   delBtn.addEventListener('click', handleDeleteToDo);
   span.innerText = newTodo.text;
   toDoList.appendChild(li);
