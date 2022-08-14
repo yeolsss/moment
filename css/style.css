@@ -1,0 +1,13 @@
+@import 'reset.css';
+
+:root {
+}
+
+* {
+  font-family: monaco, '나눔고딕', '나눔고딕OTF', '나눔손글씨 다행체', Consolas,
+    'Courier New', monospace;
+}
+
+.active {
+  display: none;
+}
