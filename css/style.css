@@ -70,6 +70,11 @@ input::placeholder {
 }
 .todo-section ul {
   width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.todo-section ul li {
+  margin: 10px;
 }
 .clock-span {
   font-size: 6em;
