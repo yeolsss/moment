@@ -1,6 +1,6 @@
 @import 'reset.css';
 @font-face {
-  src: url('/fonts/Neodgm.woff');
+  src: url('../fonts/Neodgm.woff');
   font-family: 'Neodgm';
 }
 
@@ -19,7 +19,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url('/img/3.jpg');
+  background-image: url('../img/3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
